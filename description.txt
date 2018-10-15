@@ -74,7 +74,7 @@ LifeCycle API
 - shouldComponentUpdate(nextProps, nextState) render() 함수를 호출할지 말지를 정함
 - getSnapshotBeforeUpdate(prevProps, prevState) DOM 업데이트가 일어나기 직전의 시점입니다.
 - componentDidUpdate(prevProps, prevState, snapshot) 컴포넌트에서 render() 를 호출하고난 다음에 발생
-- componentWillUnmount() 이벤트, setTimeout, 외부 라이브러리 인스턴스 제거
+- componentWillUnmount() 이벤트 , setTimeout, 외부 라이브러리 인스턴스 제거
 
 에러
  render() {
@@ -84,3 +84,4 @@ LifeCycle API
       <div></div>
     );
  }
+ 
