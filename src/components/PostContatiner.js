@@ -48,17 +48,12 @@ class PostContainer extends Component {
         const {postId, fetching, post, comments} = this.state;
 
         return (
-            <PostWrapper>
-                <Navigate 
-                    postId={postId}
-                    disabled={fetching}
-                />
-                <Post
-                    title={post.title}
-                    body={post.body}
-                    comments={comments}
-                />
-            </PostWrapper>
+            <div className="form">
+                <input value={value} onChange={onChange} onKeyPress={onKeyPress} style={{color}}/>
+                <div className="create-button" onClick={onCreate}>
+                추가
+                </div>
+            </div>
         );
     }
 }
